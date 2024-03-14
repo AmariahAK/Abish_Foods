@@ -1,25 +1,24 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Add click event listeners to section titles
-    var sectionTitles = document.querySelectorAll('h2');
-    sectionTitles.forEach(function (title) {
-        title.addEventListener('click', function () {
-            // Get the link associated with the section title
-            var link = title.dataset.link;
-            if (link) {
-                // Navigate to the linked page
-                window.location.href = link;
-            }
-        });
+document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scrolling functionality for anchor links
+    const scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 800,
+        speedAsDuration: true
     });
 
-    // Add hover effect to menu options
-    var menuOptions = document.querySelectorAll('.menu-options a');
-    menuOptions.forEach(function (option) {
-        option.addEventListener('mouseover', function () {
-            option.style.color = 'rgb(255, 165, 0)'; // Change color on hover
-        });
-        option.addEventListener('mouseout', function () {
-            option.style.color = ''; // Revert color on mouseout
-        });
+    // Function to handle click event on section headings
+    function scrollToSection(event) {
+        event.preventDefault();
+        const targetId = event.target.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            const offsetTop = targetSection.offsetTop;
+            scroll.animateScroll(offsetTop);
+        }
+    }
+
+    // Add click event listeners to section headings
+    const sectionHeadings = document.querySelectorAll(".section-heading");
+    sectionHeadings.forEach(heading => {
+        heading.addEventListener("click", scrollToSection);
     });
 });

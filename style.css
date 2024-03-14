@@ -1,34 +1,43 @@
+/* Global Styles */
 body {
-    background-color: #8B0000; /* Change background color to dark red */
-    font-family: Arial, sans-serif;
-    color: #FFFFFF; /* Change text color to white */
-  }
-  
-  h1 {
-    font-size: 3em;
+    background-color: #8B0000;
+    font-family: Book Antiqua, serif;
+    color: #FFFFFF;
+    zoom: 60%;
+}
+
+h1 {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .flavours {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .flavours a {
-    display: inline-block;
-    background-color: #333;
-    color: #FFFFFF; /* Change flavour link text color to white */
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 0 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .flavours a:hover {
-    background-color: #8B0000; /* Change hover color to dark red */
-    color: #FFFFFF; /* Change hover text color to white */
-  }
+    font-family: Bahnschrift SemiBold Condensed, sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+/* Table Styles */
+table {
+    border: 5px solid #FFFFFF;
+    text-align: left;
+    width: 1610px;
+    height: 334px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+}
+
+/* Heading Styles */
+h2 {
+    font-family: Bahnschrift, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Image Styles */
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}

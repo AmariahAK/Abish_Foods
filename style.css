@@ -1,7 +1,7 @@
 body {
-    background-color: #FFD700;
+    background-color: #8B0000; /* Change background color to dark red */
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #FFFFFF; /* Change text color to white */
   }
   
   h1 {
@@ -20,7 +20,7 @@ body {
   .flavours a {
     display: inline-block;
     background-color: #333;
-    color: #FFD700;
+    color: #FFFFFF; /* Change flavour link text color to white */
     padding: 10px 20px;
     text-decoration: none;
     margin: 0 10px;
@@ -29,6 +29,6 @@ body {
   }
   
   .flavours a:hover {
-    background-color: #FFD700;
-    color: #333;
+    background-color: #8B0000; /* Change hover color to dark red */
+    color: #FFFFFF; /* Change hover text color to white */
   }
